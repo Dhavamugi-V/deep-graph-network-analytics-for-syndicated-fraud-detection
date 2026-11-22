@@ -1,0 +1,10 @@
+pandas
+numpy
+networkx
+matplotlib
+streamlit
+scikit-learn
+xgboost
+joblib
+fastapi
+uvicorn[standard]
