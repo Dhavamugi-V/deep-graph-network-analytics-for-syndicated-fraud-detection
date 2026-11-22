@@ -1,0 +1,38 @@
+{
+  "model": "XGBoostClassifier",
+  "embedding": "Node2Vec-style biased random walks + PPMI + TruncatedSVD",
+  "accounts": 40,
+  "positive_synthetic_accounts": 5,
+  "negative_synthetic_accounts": 35,
+  "test_rows": 12,
+  "roc_auc": 1.0,
+  "average_precision": 1.0,
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1-score": 0.9523809523809523,
+      "support": 11.0
+    },
+    "1": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 1.0
+    },
+    "accuracy": 0.9166666666666666,
+    "macro avg": {
+      "precision": 0.75,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.8095238095238095,
+      "support": 12.0
+    },
+    "weighted avg": {
+      "precision": 0.9583333333333334,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.9285714285714285,
+      "support": 12.0
+    }
+  },
+  "warning": "Synthetic demonstration only. Scores are model outputs, not calibrated real-world fraud probabilities."
+}
